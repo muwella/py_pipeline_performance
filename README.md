@@ -27,3 +27,11 @@ rpa_analytics_pipeline/
 ├── setup.py              # Packaging
 ├── README.md             # Project guide
 └── .gitignore            # Ignore unnecessary files
+```
+
+## 🌟 Run Locally
+1.
+2.
+3.
+
+
