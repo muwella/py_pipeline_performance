@@ -15,11 +15,10 @@ rpa_analytics_pipeline/
 ├── src/                  # Main source code
 │   └── data_pipeline/    # Actual Python package
 │       ├── __init__.py
-│       ├── generator.py  # Script to simulate RPA logs
-│       └── processor.py  # ETL logic and business rules
+│       └── main.py       
 ├── tests/                # Unit & integration tests
-│   ├── test_generator.py
-│   └── test_processor.py
+│   ├── outputs/
+│   └── simulator.py      # In dev mode generates fake input
 ├── docs/                 # Documentation
 │   └── index.md
 ├── requirements.txt      # Dependencies
