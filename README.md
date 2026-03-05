@@ -26,8 +26,6 @@ py_pipeline_performance/
 │   ├── main.py               # Main orchestrator script
 │   ├── parser.py             # Argument handler
 │   └── simulator.py          # Data generator for DEV mode
-├── tests/                   
-│   └── testmain.py
 ├── .gitignore              
 ├── README.md           
 └── requirements.txt      
