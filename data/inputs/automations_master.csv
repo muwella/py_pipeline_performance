@@ -1,0 +1,13 @@
+AUT_ID,AUT_NAME,MARKET,FTE,EXPECTED_MONTHLY_VOL
+AUT0003619,Technical Closing of Orders,AR,9.1,2000
+AUT0003620,Invoice Posting SAP,MX,4.5,5000
+AUT0003621,HR Onboarding,CO,2.0,150
+AUT0003622,Bank Reconciliation,CL,1.5,800
+AUT0003623,Payroll Processing,BR,8.0,3500
+AUT0003624,Vendor Master Data,PE,3.5,2000
+AUT0003625,IT Helpdesk Password Reset,UY,1.2,500
+AUT0003626,Supply Chain Tracking,CR,4.8,3000
+AUT0003627,Expense Report Audit,PA,1.8,600
+AUT0003628,Lead Generation Scraper,EC,2.2,800
+AUT0003629,Compliance Reporting,AR,5.5,2500
+AUT0003630,Customer Support Routing,MX,6.5,4500
