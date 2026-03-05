@@ -26,10 +26,24 @@ def init_file_validations(logs_path):
       return False
     return True
 
+def init_output_dir():
+    logging.info("START")
+    os.makedirs(config.OUTPUT_DIR, exist_ok=True)
+
+    for file_name in os.listdir(config.OUTPUT_DIR):
+        if file_name.endswith('.csv'):
+            file_path = os.path.join(config.OUTPUT_DIR, file_name)
+            try:
+                os.remove(file_path)
+            except Exception as e:
+                logging.error(f"Could not delete file {file_name}: {e}")
+    logging.info("END")
+
+
 def main():
     parser.init_parser()
     init_logger()
-    os.makedirs(config.OUTPUT_DIR, exist_ok=True)
+    init_output_dir()
 
     if parser.args.mode == 'DEV':
         logs_path = config.LOGS_DEV_PATH
