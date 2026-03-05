@@ -1,6 +1,7 @@
 # py_pipeline_performance
 End-to-end data analytics pipeline that transforms raw RPA execution logs into actionable business intelligence.
 
+## 📊 Executive Dashboard
 ![Power BI Executive Dashboard](docs/screenshots/power_bi_dashboard.png)
 
 ## 📌 Overview
@@ -26,22 +27,20 @@ py_pipeline_performance/
 │   ├── main.py               # Main orchestrator script
 │   ├── parser.py             # Argument handler
 │   └── simulator.py          # Data generator for DEV mode
-├── tests/                   
-│   └── testmain.py
 ├── .gitignore              
 ├── README.md           
 └── requirements.txt      
 ```
 
 # 🌟 Run Locally
-1. Clone the repository and navigate to the project directory:
+### 1. Clone the repository and navigate to the project directory:
 
 ```bash
 git clone [https://github.com/your-username/py_pipeline_performance.git]
 cd py_pipeline_performance
 ```
 
-2. Set up a virtual environment and install dependencies:
+### 2. Set up a virtual environment and install dependencies:
 
 Create a virtual environment
 
@@ -67,7 +66,7 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-3. Run the pipeline in Development Mode (Recommended for testing):
+### 3. Run the pipeline in Development Mode (Recommended for testing):
 
 This mode automatically generates 5,000+ realistic synthetic RPA logs and master data files before executing the ETL process.
 
@@ -77,5 +76,5 @@ python src/main.py --mode DEV
 
 You can find the generated raw data in data/inputs/ and the final processed dataset in data/outputs/dev_analytics_dataset.csv.
 
-5. Visualize the Data:
+### 4. Visualize the Data:
 Connect your BI tool of choice (Power BI, Tableau, etc.) directly to the generated data/outputs/dev_analytics_dataset.csv file to explore the pre-calculated metrics, ROI, and exception distributions.
